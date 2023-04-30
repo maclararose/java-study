@@ -32,6 +32,8 @@ public class DesafioWhile {
 		
 		/*
 		 * Resolucao do curso
+		 * 
+		 * 
 		 * int quantidadeNotas = 0;
 		 * double nota = 0;
 		 * double total = 0;
