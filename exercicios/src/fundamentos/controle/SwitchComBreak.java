@@ -35,7 +35,7 @@ public class SwitchComBreak {
 			conceito = "F";
 			break;
 		default:
-			System.out.println("Nota não valida");
+			conceito = "Nota não valida";
 		}
 		System.out.println("Conceito: " + conceito);
 	}
