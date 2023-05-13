@@ -10,7 +10,7 @@ public class AreaCircunferenciaTeste {
 //		AreaCircunferencia.PI = 0.25; >>> não funciona por ser constante
 		
 		System.out.println(circ.area());
-		System.out.println(circ1.area()); // metodo que pertence a instancia
+		System.out.println(circ1.area()); // metodo que pertence a instancia	
 		System.out.println(AreaCircunferencia.PI);
 		System.out.println(AreaCircunferencia.area(23)); // metodo que pertence a classe 
 
