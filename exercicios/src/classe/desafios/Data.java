@@ -1,9 +1,9 @@
 package classe.desafios;
 
 public class Data {
-	int dia;
-	int mes;
-	int ano;
+	public int dia;
+	public int mes;
+	public int ano;
 	
 	Data(){
 		dia = 1;
@@ -11,13 +11,13 @@ public class Data {
 		ano = 1970;
 	}
 	
-	Data(int diaInicial, int mesInicial, int anoInicial) {
+	public Data(int diaInicial, int mesInicial, int anoInicial) {
 		dia = diaInicial;
 		mes = mesInicial;
 		ano = anoInicial;
 	}
 	
-	String dataFormatada() {
+	public String dataFormatada() {
 		return String.format("%d/%d/%d", dia, mes, ano);
 	}
 }
