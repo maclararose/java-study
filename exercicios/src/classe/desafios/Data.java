@@ -11,10 +11,10 @@ public class Data {
 		ano = 1970;
 	}
 	
-	public Data(int diaInicial, int mesInicial, int anoInicial) {
-		dia = diaInicial;
-		mes = mesInicial;
-		ano = anoInicial;
+	public Data(int dia, int mes, int ano) {
+		this.dia = dia;
+		this.mes = mes;
+		this.ano = ano;
 	}
 	
 	public String dataFormatada() {
