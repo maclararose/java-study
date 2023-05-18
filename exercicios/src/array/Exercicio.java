@@ -1,4 +1,4 @@
-package array.exercicio;
+package array;
 
 import java.util.Arrays;
 
