@@ -7,6 +7,10 @@ public class Livro {
 	double valor;
 	Autor autor;
 	
+	Livro() {
+		System.out.println("Novo livro criado!");
+	}
+	
 	void mostrarDetalhes() {
 		System.out.println("Mostrando detalhes do livro:");
 		System.out.println("Nome: "+nome);

@@ -56,6 +56,9 @@ public class CadastroDeLivros {
 //		livroMaria.autor = maria; autor nulo por comentario
 		
 		livroMaria.mostrarDetalhes();
+		
+		Livro livro1 = new Livro();
+		Livro livro2 = new Livro();
 
 	}
 
