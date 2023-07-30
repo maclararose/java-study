@@ -3,6 +3,7 @@ package javabook;
 public class CalculadoraDeEstoque {
 
 	public static void main(String[] args) {
+		
 		double livroJava8 = 59.90;
 		double livroTDD = 59.90;
 //		int contador = 0;
