@@ -5,7 +5,7 @@ public class CarroTeste {
 	public static void main(String[] args) {
 		Carro civic = new Civic();
 		civic.velocidadeAtual = 10;
-		Carro ferrari = new Ferrari();
+		Carro ferrari = new Ferrari(250);
 		ferrari.velocidadeAtual = 60;
 		
 		System.out.println(civic.velocidadeAtual);
