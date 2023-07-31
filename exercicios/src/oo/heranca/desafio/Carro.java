@@ -4,6 +4,7 @@ public class Carro {
 	int velocidadeAtual = 0;
 	final int VELOCIDADE_MAXIMA;
 	int delta = 5;
+	protected int marcha = 1;
 	
 	Carro(int velocidadeMaxima) {
 		this.VELOCIDADE_MAXIMA = velocidadeMaxima;
