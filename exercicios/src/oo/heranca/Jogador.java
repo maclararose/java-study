@@ -1,8 +1,8 @@
 package oo.heranca;
 
 public class Jogador {
-	int vida = 100;
-	int x, y;
+	public int vida = 100;
+	public int x, y;
 	
 	Jogador(int x, int y) {
 		this.x = x;
@@ -24,7 +24,7 @@ public class Jogador {
 		}
 	}
 	
-	boolean andar(Direcao direcao) {
+	public boolean andar(Direcao direcao) {
 		switch(direcao) {
 		case NORTE:
 			y--;

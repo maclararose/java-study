@@ -1,4 +1,7 @@
-package oo.heranca;
+package oo.heranca.desafio.teste;
+
+import oo.heranca.Heroi;
+import oo.heranca.Mob;
 
 public class Jogo {
 

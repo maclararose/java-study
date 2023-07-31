@@ -1,17 +1,21 @@
-package oo.heranca.desafio;
+package oo.heranca.desafio.teste;
+
+import oo.heranca.desafio.Carro;
+import oo.heranca.desafio.Civic;
+import oo.heranca.desafio.Ferrari;
 
 public class CarroTeste {
 
 	public static void main(String[] args) {
 		Carro civic = new Civic();
 		civic.velocidadeAtual = 10;
-		civic.marcha = 2;
+//		civic.marcha = 2;
 		
 		Carro ferrari = new Ferrari(250);
 		ferrari.velocidadeAtual = 60;
 		
 		System.out.println(civic.velocidadeAtual);
-		System.out.println(civic.marcha);
+//		System.out.println(civic.marcha);
 		System.out.println(ferrari.velocidadeAtual);
 		
 		civic.acelerar();

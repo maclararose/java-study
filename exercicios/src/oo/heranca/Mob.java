@@ -1,7 +1,7 @@
 package oo.heranca;
 
 public class Mob extends Jogador {
-	Mob() {
+	public Mob() {
 		super(10,10);
 	}
 }
