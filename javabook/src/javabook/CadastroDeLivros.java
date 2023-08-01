@@ -2,6 +2,7 @@ package javabook;
 
 public class CadastroDeLivros {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		Autor autor = new Autor();
 		autor.nome = "Rodrigo Turini";

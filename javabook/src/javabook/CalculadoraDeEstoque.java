@@ -2,6 +2,7 @@ package javabook;
 
 public class CalculadoraDeEstoque {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
 		double livroJava8 = 59.90;
