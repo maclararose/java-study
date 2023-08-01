@@ -33,6 +33,14 @@ public class Livro {
 		return true;
 	}
 	
+	void adicionaValor(double valor) {
+		this.valor = valor;
+	}
+	
+	double retornaValor() {
+		return this.valor;
+	}
+	
 	boolean temAutor() {
 		return this.autor != null;
 	}

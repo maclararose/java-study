@@ -13,7 +13,7 @@ public class CadastroDeLivros {
 		livro.nome = "Java 8 Prático";
 		livro.descricao = "Novos recursos da linguagem";
 		livro.isbn = "978-85-66250-46-6";
-		livro.valor = 59.90;
+//		livro.valor = 59.90;
 		livro.autor = autor;
 		livro.aplicaDesconto(0.1);
 		
@@ -34,7 +34,7 @@ public class CadastroDeLivros {
 		outroLivro.nome = "Lógica de Programação";
 		outroLivro.descricao = "Crie seus primeiros programas";
 		outroLivro.isbn = "978-85-66250-22-0";
-		outroLivro.valor = 59.90;
+//		outroLivro.valor = 59.90;
 		outroLivro.autor = outroAutor;
 		
 		outroLivro.mostrarDetalhes();
@@ -53,7 +53,7 @@ public class CadastroDeLivros {
 		livroMaria.nome = "Qualquer coisa";
 		livroMaria.descricao = "é so um teste";
 		livroMaria.isbn = "984-983-243-13";
-		livroMaria.valor = 39.90;
+//		livroMaria.valor = 39.90;
 //		livroMaria.autor = maria; autor nulo por comentario
 		
 		livroMaria.mostrarDetalhes();
