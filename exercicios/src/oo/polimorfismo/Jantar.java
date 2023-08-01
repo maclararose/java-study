@@ -8,7 +8,13 @@ public class Jantar {
 		Arroz arroz = new Arroz(0.35);
 		Feijao feijao = new Feijao(0.35);
 		Sorvete sorvete = new Sorvete(0.30);
+		Comida sorvete2 = new Sorvete(0.5); // possibilidade de uma váriavel generica receber tipo especifico, instancia um objt especif.
+//		Comida comida = new Comida(0.5); não vai permitir que o usuario crie algo generico
 		
+		System.out.println(pessoa.getPeso());
+		
+//		pessoa.comer(comida);
+		pessoa.comer(sorvete2);
 		System.out.println(pessoa.getPeso());
 		
 		pessoa.comer(arroz);
