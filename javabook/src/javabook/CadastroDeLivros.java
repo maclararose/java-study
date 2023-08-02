@@ -1,20 +1,20 @@
 package javabook;
 
 public class CadastroDeLivros {
-
-	@SuppressWarnings("unused")
+	
 	public static void main(String[] args) {
-		Autor autor = new Autor();
-		autor.nome = "Rodrigo Turini";
-		autor.email = "rodrigo.turini@caelum.com.br";
-		autor.cpf = "123.456.789-00";
 		
-		Livro livro = new Livro();
-		livro.nome = "Java 8 Prático";
-		livro.descricao = "Novos recursos da linguagem";
-		livro.isbn = "978-85-66250-46-6";
-//		livro.valor = 59.90;
-		livro.autor = autor;
+		Autor autor = new Autor();
+		autor.setNome("Rodrigo Turini");
+		autor.setEmail("rodrigo.turini@caelum.com.br");
+		autor.setCpf("123.456.789-00");
+		
+		Livro livro = new Livro(autor);
+		livro.setNome("Java 8 Prático");
+		livro.setDescricao("Novos recursos da linguagem");
+		livro.setIsbn("978-85-66250-46-6");
+//		livro.setValor(59.90);
+//		livro.setAutor(autor);
 		livro.aplicaDesconto(0.1);
 		
 		livro.mostrarDetalhes();
@@ -26,16 +26,16 @@ public class CadastroDeLivros {
 //		System.out.println(livro.valor);
 		
 		Autor outroAutor = new Autor();
-		outroAutor.nome = "Paulo Silveira";
-		outroAutor.email = "paulo.silveira@caelum.com.br";
-		outroAutor.cpf = "233.455.677-88";
+		outroAutor.setNome("Paulo Silveira");
+		outroAutor.setEmail("paulo.silveira@caelum.com.br");
+		outroAutor.setCpf("233.455.677-88");
 		
-		Livro outroLivro = new Livro();
-		outroLivro.nome = "Lógica de Programação";
-		outroLivro.descricao = "Crie seus primeiros programas";
-		outroLivro.isbn = "978-85-66250-22-0";
+		Livro outroLivro = new Livro(outroAutor);
+		outroLivro.setNome("Lógica de Programação");
+		outroLivro.setDescricao("Crie seus primeiros programas");
+		outroLivro.setIsbn("978-85-66250-22-0");
 //		outroLivro.valor = 59.90;
-		outroLivro.autor = outroAutor;
+//		outroLivro.setAutor(outroAutor);
 		
 		outroLivro.mostrarDetalhes();
 		
@@ -46,21 +46,22 @@ public class CadastroDeLivros {
 //		System.out.println(outroLivro.valor);
 		
 //		Autor maria = new Autor();
-//		maria.email = "maria@teste.com";
-//		maria.cpf = "000.000.987-66";
+//		maria.setEmail("maria@teste.com");
+//		maria.setCpf("000.000.987-66");
 		
 		Livro livroMaria = new Livro();
-		livroMaria.nome = "Qualquer coisa";
-		livroMaria.descricao = "é so um teste";
-		livroMaria.isbn = "984-983-243-13";
-//		livroMaria.valor = 39.90;
+		livroMaria.setNome("Qualquer coisa");
+		livroMaria.setDescricao("é so um teste");
+//		livroMaria.setIsbn("984-983-243-13");
+//		livroMaria.setValor(39.90);
 //		livroMaria.autor = maria; autor nulo por comentario
 		
 		livroMaria.mostrarDetalhes();
 		
-		Livro livro1 = new Livro();
-		Livro livro2 = new Livro();
-
+		Ebook ebook = new Ebook();
+		
+		ebook.setNome("Java 8 Prático");
+		
 	}
 
 }

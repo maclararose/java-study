@@ -35,6 +35,9 @@ public class CarroTeste {
 		Ferrari carro = new Ferrari(80);
 		carro.ligarAr();
 		carro.ligarTurbo();
+		carro.acelerar();
+		
+		System.out.println(carro.nivelDoAr());
 		
 		carro.acelerar();
 		carro.acelerar();
