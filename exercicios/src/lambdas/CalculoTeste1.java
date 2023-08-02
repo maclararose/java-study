@@ -16,6 +16,9 @@ public class CalculoTeste1 {
 		calculo = (x, y) -> x * y; // return está implicito além de que sem o par de chaves diz que terá apenas uma sentença de código
 		
 		System.out.println(calculo.executar(3, 5));
+		
+		System.out.println(calculo.retornaString());
+		System.out.println(Calculo.metodoEstatico());
 	}
 
 }
