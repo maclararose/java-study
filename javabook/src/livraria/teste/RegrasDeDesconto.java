@@ -1,4 +1,10 @@
-package javabook;
+package livraria.teste;
+
+import livraria.Autor;
+import livraria.produtos.Ebook;
+import livraria.produtos.Livro;
+import livraria.produtos.LivroFisico;
+import livraria.produtos.MiniLivro;
 
 public class RegrasDeDesconto {
 

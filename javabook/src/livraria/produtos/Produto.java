@@ -1,4 +1,4 @@
-package javabook;
+package livraria.produtos;
 
 @FunctionalInterface
 public interface Produto {

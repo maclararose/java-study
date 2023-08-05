@@ -1,4 +1,6 @@
-package javabook;
+package livraria.produtos;
+
+import livraria.Autor;
 
 public class Ebook extends Livro {
 	private String waterMark;

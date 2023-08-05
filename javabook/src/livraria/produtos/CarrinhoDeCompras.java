@@ -1,4 +1,4 @@
-package javabook;
+package livraria.produtos;
 
 public class CarrinhoDeCompras {
 	private double total;

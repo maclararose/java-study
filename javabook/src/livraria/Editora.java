@@ -1,4 +1,4 @@
-package javabook;
+package livraria;
 
 public class Editora {
 	private String nomeFantasia;

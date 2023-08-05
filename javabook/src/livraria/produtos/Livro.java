@@ -1,4 +1,6 @@
-package javabook;
+package livraria.produtos;
+
+import livraria.Autor;
 
 public abstract class Livro implements Promocional {
 	private String nome;
@@ -57,12 +59,12 @@ public abstract class Livro implements Promocional {
 		this.autor = autor;
 	}
 	
-	void mostrarDetalhes() {
+	public void mostrarDetalhes() {
 		System.out.println("Mostrando detalhes do livro:");
-		System.out.println("Nome: "+this.nome);
-		System.out.println("Descrição: "+this.descricao);
-		System.out.println("ISBN: "+this.isbn);
-		System.out.println("Valor: R$"+this.valor);
+		System.out.println("Nome: "+getNome());
+		System.out.println("Descrição: "+getDescricao());
+		System.out.println("ISBN: "+getIsbn());
+		System.out.println("Valor: R$"+getValor());
 		if(this.temAutor()) {
 			autor.mostrarDetalhes();
 		}

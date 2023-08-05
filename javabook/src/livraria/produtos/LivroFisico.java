@@ -1,4 +1,6 @@
-package javabook;
+package livraria.produtos;
+
+import livraria.Autor;
 
 public class LivroFisico extends Livro {
 	public LivroFisico(Autor autor) {

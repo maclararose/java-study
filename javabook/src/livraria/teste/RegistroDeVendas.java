@@ -1,4 +1,9 @@
-package javabook;
+package livraria.teste;
+
+import livraria.Autor;
+import livraria.produtos.CarrinhoDeCompras;
+import livraria.produtos.Ebook;
+import livraria.produtos.LivroFisico;
 
 public class RegistroDeVendas {
 

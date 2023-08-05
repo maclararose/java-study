@@ -1,4 +1,4 @@
-package javabook;
+package livraria.teste;
 
 public class CalculadoraDeEstoque {
 

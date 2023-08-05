@@ -1,4 +1,6 @@
-package javabook;
+package livraria.produtos;
+
+import livraria.Editora;
 
 public class Revista implements Produto, Promocional {
 	private String nome;
