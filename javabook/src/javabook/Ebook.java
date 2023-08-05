@@ -19,7 +19,7 @@ public class Ebook extends Livro {
 	}
 	
 	@Override
-	public boolean aplicaDesconto(double porcentagem) {
+	public boolean aplicaDescontoDe(double porcentagem) {
 		/*
 		 * se o atributo for private mantemos o encapsulamento, mas caso necessário ser modificado
 		 * para usar em outros códigos, podemos modifica-lo para protected

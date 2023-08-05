@@ -1,6 +1,6 @@
 package javabook;
 
-public abstract class Livro {
+public abstract class Livro implements Promocional {
 	private String nome;
 	private String descricao;
 	private String isbn;
@@ -69,7 +69,7 @@ public abstract class Livro {
 		System.out.println("-------------------------------------------------");
 	}
 	
-	public abstract boolean aplicaDesconto(double porcentagem);
+	public abstract boolean aplicaDescontoDe(double porcentagem);
 	
 	public double getValor() {
 		return this.valor;

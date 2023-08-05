@@ -4,10 +4,21 @@ public class CarrinhoDeCompras {
 	private double total;
 	
 //	Polimorfismo dinâmico -> há herança
+	public void adiciona(Produto produto) {
+		System.out.println("Adicionando: "+produto);
+		this.total += produto.getValor();
+	}
+	
 	public void adiciona(Livro livro) {
 		System.out.println("Adicionando: "+livro);
-		livro.aplicaDesconto(0.16);
+		livro.aplicaDescontoDe(0.16);
 		this.total += livro.getValor();
+	}
+	
+	public void adiciona(Revista revista) {
+		System.out.println("Adicionando: "+revista);
+		revista.aplicaDescontoDe(0.05);
+		this.total += revista.getValor();
 	}
 	
 	public double getTotal() {

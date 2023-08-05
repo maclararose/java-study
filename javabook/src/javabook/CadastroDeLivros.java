@@ -15,7 +15,7 @@ public class CadastroDeLivros {
 		livro.setIsbn("978-85-66250-46-6");
 //		livro.setValor(59.90);
 //		livro.setAutor(autor);
-		livro.aplicaDesconto(0.1);
+		livro.aplicaDescontoDe(0.1);
 		
 		livro.mostrarDetalhes();
 		

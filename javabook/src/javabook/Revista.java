@@ -1,12 +1,12 @@
 package javabook;
 
-public class Revista {
+public class Revista implements Produto, Promocional {
 	private String nome;
 	private String descricao;
 	private double valor;
 	private Editora editora;
 	
-	public boolean aplicaDescconto(double porcentagem) {
+	public boolean aplicaDescontoDe(double porcentagem) {
 		if(porcentagem > 0.1) {
 			return false;
 		}

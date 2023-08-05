@@ -14,7 +14,7 @@ public class LivroFisico extends Livro {
 	}
 	
 	@Override
-	public boolean aplicaDesconto(double porcentagem) {
+	public boolean aplicaDescontoDe(double porcentagem) {
 		if (porcentagem > 0.3) {
 			return false;
 		}
