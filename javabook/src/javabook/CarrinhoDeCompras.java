@@ -1,9 +1,17 @@
 package javabook;
 
 public class CarrinhoDeCompras {
+	private double total;
+	
 //	Polimorfismo dinâmico -> há herança
 	public void adiciona(Livro livro) {
 		System.out.println("Adicionando: "+livro);
+		livro.aplicaDesconto(0.16);
+		this.total += livro.getValor();
+	}
+	
+	public double getTotal() {
+		return total;
 	}
 	
 //	public void adiciona(Livro livro) {

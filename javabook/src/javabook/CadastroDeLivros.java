@@ -9,7 +9,7 @@ public class CadastroDeLivros {
 		autor.setEmail("rodrigo.turini@caelum.com.br");
 		autor.setCpf("123.456.789-00");
 		
-		Livro livro = new Livro(autor);
+		Livro livro = new LivroFisico(autor);
 		livro.setNome("Java 8 Prático");
 		livro.setDescricao("Novos recursos da linguagem");
 		livro.setIsbn("978-85-66250-46-6");
@@ -30,7 +30,7 @@ public class CadastroDeLivros {
 		outroAutor.setEmail("paulo.silveira@caelum.com.br");
 		outroAutor.setCpf("233.455.677-88");
 		
-		Livro outroLivro = new Livro(outroAutor);
+		Livro outroLivro = new Ebook(outroAutor);
 		outroLivro.setNome("Lógica de Programação");
 		outroLivro.setDescricao("Crie seus primeiros programas");
 		outroLivro.setIsbn("978-85-66250-22-0");
@@ -45,11 +45,11 @@ public class CadastroDeLivros {
 //		System.out.println(outroLivro.isbn);
 //		System.out.println(outroLivro.valor);
 		
-//		Autor maria = new Autor();
+		Autor maria = new Autor();
 //		maria.setEmail("maria@teste.com");
 //		maria.setCpf("000.000.987-66");
 		
-		Livro livroMaria = new Livro();
+		Livro livroMaria = new LivroFisico(maria);
 		livroMaria.setNome("Qualquer coisa");
 		livroMaria.setDescricao("é so um teste");
 //		livroMaria.setIsbn("984-983-243-13");
