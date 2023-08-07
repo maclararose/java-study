@@ -2,15 +2,11 @@ package livraria.produtos;
 
 import livraria.Autor;
 
-public class Ebook extends Livro {
+public class Ebook extends Livro implements Produto {
 	private String waterMark;
 	
 	public Ebook(Autor autor) {
 		super(autor);
-	}
-	
-	public Ebook() {
-		
 	}
 	
 	public String getWaterMark() {

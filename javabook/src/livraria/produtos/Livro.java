@@ -1,6 +1,7 @@
 package livraria.produtos;
 
 import livraria.Autor;
+import livraria.exception.AutorNullException;
 
 public abstract class Livro implements Promocional {
 	private String nome;
@@ -10,22 +11,12 @@ public abstract class Livro implements Promocional {
 	private Autor autor;
 	
 	public Livro(Autor autor) {
-		this();
+		if (autor == null) {
+			throw new AutorNullException("O Autor do Livro não pode ser nulo"); // criamos nosso proprio Exception
+		}
 		setAutor(autor); // mesma coisa de this.autor = autor
-	}
-	
-	public Livro() {
 		setIsbn("000-00-00000-00-0");
 	}
-	
-//	public Livro(String nome, String descricao, String isbn, double valor, Autor autor) {
-//		super();
-//		this.nome = nome;
-//		this.descricao = descricao;
-//		this.isbn = isbn;
-//		this.valor = valor;
-//		this.autor = autor;
-//	}
 
 	public String getNome() {
 		return nome;

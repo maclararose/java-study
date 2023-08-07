@@ -2,13 +2,9 @@ package livraria.produtos;
 
 import livraria.Autor;
 
-public class LivroFisico extends Livro {
+public class LivroFisico extends Livro implements Produto {
 	public LivroFisico(Autor autor) {
 		super(autor);
-	}
-	
-	public LivroFisico() {
-		
 	}
 	
 	public double getTaxaImpressao() {

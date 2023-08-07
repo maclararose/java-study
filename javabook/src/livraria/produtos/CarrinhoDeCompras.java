@@ -2,17 +2,15 @@ package livraria.produtos;
 
 public class CarrinhoDeCompras {
 	private double total;
+	private Produto[] produtos = new Produto[10];
+	private int contador = 0;
 	
 //	Polimorfismo dinâmico -> há herança
 	public void adiciona(Produto produto) {
 		System.out.println("Adicionando: "+produto);
+		this.produtos[contador] = produto;
+		contador++;
 		this.total += produto.getValor();
-	}
-	
-	public void adiciona(Livro livro) {
-		System.out.println("Adicionando: "+livro);
-		livro.aplicaDescontoDe(0.16);
-		this.total += livro.getValor();
 	}
 	
 	public void adiciona(Revista revista) {
@@ -23,6 +21,14 @@ public class CarrinhoDeCompras {
 	
 	public double getTotal() {
 		return total;
+	}
+
+	public Produto[] getProdutos() {
+		return produtos;
+	}
+
+	public void setProdutos(Produto[] produtos) {
+		this.produtos = produtos;
 	}
 	
 //	public void adiciona(Livro livro) {
