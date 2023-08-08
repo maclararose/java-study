@@ -9,7 +9,9 @@ import livraria.produtos.MiniLivro;
 public class RegrasDeDesconto {
 
 	public static void main(String[] args) {
-		Livro livro = new LivroFisico();
+		Autor autor = new Autor();
+		autor.setNome("Roberson");
+		Livro livro = new LivroFisico(autor);
 		livro.setValor(59.90);
 		
 		System.out.println("Valor do livro impresso sem desconto: "+livro.getValor());
@@ -20,7 +22,7 @@ public class RegrasDeDesconto {
 			System.out.println("Valor do livro impresso com desconto: "+livro.getValor());
 		}
 		
-		Ebook e = new Ebook();
+		Ebook e = new Ebook(autor);
 		e.setValor(29.90);
 		System.out.println("Valor do ebook sem desconto: "+e.getValor());
 		

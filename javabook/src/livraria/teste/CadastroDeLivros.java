@@ -63,7 +63,7 @@ public class CadastroDeLivros {
 		
 		livroMaria.mostrarDetalhes();
 		
-		Ebook ebook = new Ebook();
+		Ebook ebook = new Ebook(maria);
 		
 		ebook.setNome("Java 8 Prático");
 		
