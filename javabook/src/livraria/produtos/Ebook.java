@@ -43,4 +43,10 @@ public class Ebook extends Livro implements Produto {
 		return true;
 	}
 	
+	@Override
+	// Super classe: Object
+	public String toString() {
+		return "Eu sou um ebook";
+	}
+	
 }
